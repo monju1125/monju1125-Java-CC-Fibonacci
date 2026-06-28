@@ -18,11 +18,12 @@ public class Fibonacci {
 
         int a = 0;
         int next = 1;
+
         if ((n ==0 || n ==1)) {
             return 1;
         }
-         int num = 0;
-        for(int i=1; i<=n; i++){
+
+        for(int i=0; i<=n; i++){
             a = next;
             next = a + i-1;
         }
