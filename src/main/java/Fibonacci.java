@@ -16,7 +16,7 @@ public class Fibonacci {
      */
     public int fib(int n){
 
-        int a = 0;
+        int a = 1;
         int next = 1;
 
         if (n == 0 )  return 0;
@@ -24,7 +24,7 @@ public class Fibonacci {
 
         for(int i = 1; i< n; i++){
             a = next;
-            next = a + i-1;
+            next = i + i-1;
         }
 
         return next;
