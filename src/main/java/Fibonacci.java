@@ -21,7 +21,7 @@ public class Fibonacci {
 
         if (n == 0 )  return 0;
 
-        for(int i = 1; i<=n; i++){
+        for(int i = 1; i<n; i++){
             a = next;
             next = a + i-1;
         }
