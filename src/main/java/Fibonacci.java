@@ -16,17 +16,18 @@ public class Fibonacci {
      */
     public int fib(int n){
 
-        int a = 1;
-        int next = 1;
-
         if (n == 0 )  return 0;
         if (n== 1) return 1;
 
-        for(int i = ; i< n; i++){
-            a = next;
-            next = i + i-1;
+        int previous = 0;
+        int current = 1;
+
+        for(int i = 2; i<=n; i++){
+            int next = previous + current;
+            previous = current;
+            current = next;
         }
 
-        return next;
+        return current;
     }
 }
